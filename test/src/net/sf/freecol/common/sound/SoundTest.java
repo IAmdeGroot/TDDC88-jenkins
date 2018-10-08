@@ -66,7 +66,7 @@ public class SoundTest extends FreeColTestCase {
     private void playSound(String id) {
         File file = ResourceManager.getAudio(id);
         assertNotNull("No sound resource: " + id, file);
-        try {
+        try { //try me bitch
             soundPlayer.playOnce(file);
             try { // Just play the beginning of the sound to check it works
                 Thread.sleep(100);
